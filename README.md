@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# OFILEGAL
 
-## Getting Started
+Sitio profesional de Isaí Alexander Zeledón, Abogado y Notario Público. Next.js (App Router), TypeScript, ESLint y Tailwind.
 
-First, run the development server:
+## Desarrollo
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+cp .env.example .env.local
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000). El panel de edición está en [http://localhost:3000/admin](http://localhost:3000/admin).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Scripts:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `pnpm dev` — servidor de desarrollo
+- `pnpm build` — compilación de producción
+- `pnpm lint` / `pnpm lint:fix` — ESLint
 
-## Learn More
+## Cómo editar (fotos y artículos)
 
-To learn more about Next.js, take a look at the following resources:
+1. Copie `.env.example` a `.env.local` y defina `ADMIN_PASSWORD`.
+2. Entre a `/admin` con esa clave.
+3. **Fotos:** suba imágenes en `/admin/fotos`. Quedan en `public/uploads`.
+4. **Artículos:** cree o edite en `/admin/articulos` (borrador, próximamente o publicado).
+5. **Sitio:** en `/admin/sitio` elija la foto de perfil y actualice teléfono, correo y dirección.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+El contenido público se lee desde `content/site.json`, `content/articles.json` y `content/media.json`. Esa capa (`ContentStore`) está pensada para reemplazarse luego por una base de datos y almacenamiento de archivos (por ejemplo Blob) sin rehacer las páginas.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+En un despliegue serverless, los archivos JSON y las subidas locales no persisten; use este panel en local o cambie el almacén antes de producción.
 
-## Deploy on Vercel
+## Notas
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+La foto oficial del HTML original (`image_2cef80.jpg`) no estaba junto al archivo. Suba el retrato desde `/admin/fotos` y asígnelo en `/admin/sitio`.

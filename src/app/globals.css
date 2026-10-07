@@ -1,26 +1,72 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-navy-darker: #060b14;
+  --color-navy-dark: #0b132b;
+  --color-navy-slate: #111d38;
+  --color-navy-card: #162447;
+  --color-navy-border: #1e293b;
+  --color-navy-accent: #1d4ed8;
+  --color-navy-hover: #2563eb;
+  --color-navy-gold: #d4af37;
+  --color-navy-amber: #c5a059;
+  --font-sans: var(--font-jakarta);
+  --font-serif: var(--font-cormorant);
+  --font-cinzel: var(--font-cinzel);
+  --font-script: var(--font-script);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #111d38 #060b14;
+}
+
+*::-webkit-scrollbar {
+  width: 0.625rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: #060b14;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #111d38;
+  border-radius: 0.1875rem;
+  border: 0.0625rem solid #c5a059;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0b132b;
+  color: #e2e8f0;
+}
+
+.navy-card-border {
+  border: 0.0625rem solid rgb(197 160 89 / 0.3);
+  box-shadow: 0 0.625rem 1.875rem rgb(0 0 0 / 0.5);
+}
+
+.cap-letter {
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-weight: 700;
+  color: #d4af37;
+  font-size: 1.4em;
+  line-height: 0.8;
+  display: inline-block;
+  margin-right: -0.0625rem;
+  text-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 0.6);
+}
+
+.bg-navy-pattern {
+  background-color: #0b132b;
+  background-image:
+    radial-gradient(rgb(29 78 216 / 0.15) 0.046875rem, transparent 0.046875rem),
+    radial-gradient(rgb(212 175 55 / 0.15) 0.046875rem, #0b132b 0.046875rem);
+  background-size: 1.875rem 1.875rem;
+  background-position:
+    0 0,
+    0.9375rem 0.9375rem;
 }

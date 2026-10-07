@@ -1,0 +1,39 @@
+[
+  {
+    "id": "art-promesas-venta",
+    "slug": "formalizacion-promesas-de-venta-inmobiliaria",
+    "title": "Aspectos Claves en la Formalización de Promesas de Venta Inmobiliaria",
+    "excerpt": "Análisis práctico sobre precauciones, verificación registral del inmueble y cláusulas penales recomendadas en el marco legal nicaragüense.",
+    "body": "Este artículo se publicará próximamente. Desde el panel de administración puede completar el texto, añadir una imagen de portada y marcarlo como publicado.",
+    "category": "Notarial & Inmobiliario",
+    "coverImageUrl": null,
+    "status": "coming_soon",
+    "publishedAt": null,
+    "updatedAt": "2026-10-07T00:00:00.000Z"
+  },
+  {
+    "id": "art-clausulas-controversias",
+    "slug": "clausulas-solucion-de-controversias",
+    "title": "Cláusulas de Solución de Controversias en Contratos Privados",
+    "excerpt": "Pautas estratégicas para pactar mecanismos de arreglo directo y mediación antes de recurrir a la vía judicial procesal.",
+    "body": "Este artículo se publicará próximamente. Desde el panel de administración puede completar el texto, añadir una imagen de portada y marcarlo como publicado.",
+    "category": "Contratación Privada",
+    "coverImageUrl": null,
+    "status": "coming_soon",
+    "publishedAt": null,
+    "updatedAt": "2026-10-07T00:00:00.000Z"
+  },
+  {
+    "id": "art-criterios-digitales",
+    "slug": "criterios-juridicos-tiktok-linkedin",
+    "title": "Criterios Jurídicos Cotidianos en TikTok & LinkedIn",
+    "excerpt": "Contenido dinámico en video y publicaciones cortas sobre prevención legal, dudas habituales de ciudadanos y empresas.",
+    "body": "Comparto criterios jurídicos, análisis práctico y cultura de prevención legal a través de TikTok y LinkedIn. Visite los canales profesionales para ver el contenido más reciente.",
+    "category": "Divulgación Digital",
+    "coverImageUrl": null,
+    "status": "published",
+    "externalUrl": "https://www.tiktok.com/@isaizeledonnn?is_from_webapp=1&sender_device=pc",
+    "publishedAt": "2026-01-01T00:00:00.000Z",
+    "updatedAt": "2026-10-07T00:00:00.000Z"
+  }
+]
